@@ -6,7 +6,8 @@ import { useSnapshot } from 'valtio';
 
 const Box = () => {
   const snap = useSnapshot(state);
-  const { nodes, materials } = useGLTF('/shirt_baked.glb');
+  const { nodes, materials } = useGLTF(`${process.env.PUBLIC_URL}/shirt_baked.glb`);
+
 
   const stateString = JSON.stringify(snap);
 
