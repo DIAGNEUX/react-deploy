@@ -39,3 +39,23 @@ h1{
 .navbar .logo{
     margin-left: 10px;
 }
+canvas {
+    height: 500px;
+    width: 100vw;
+}
+.flex_presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+
+}
+.presentation p{
+    font-size: 45px;
+}
+.presentation p span{
+    background-color: var(--second);
+    padding: 10px;
+}
