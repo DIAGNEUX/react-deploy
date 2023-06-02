@@ -1,24 +1,30 @@
-import { useRef } from "react";
-import { useFrame , Canvas } from "@react-three/fiber";
-import * as THREE from "three"; // Ajoutez cette ligne pour importer THREE
+import { useGLTF } from '@react-three/drei';
+import { useFrame } from '@react-three/fiber';
+import state from './State';
+import { easing } from 'maath';
+import { useSnapshot } from 'valtio';
 
-import React from 'react';
+const Box = () => {
+  const snap = useSnapshot(state);
+  const { nodes, materials } = useGLTF('/shirt_baked.glb');
 
-function Box() {
-  const mesh = useRef();
+  const stateString = JSON.stringify(snap);
 
   useFrame(() => {
-    mesh.current.rotation.x += 0.01;
-    mesh.current.rotation.x += 0.01;
+    // Mettez ici votre logique d'animation si nécessaire
   });
 
   return (
-      <mesh ref={mesh}>
-        <boxBufferGeometry />
-        <boxGeometry args={[1, 1, 1]}  />
-        <meshStandardMaterial color={new THREE.Color("red")} /> {/* Utilisez THREE.Color */}
-      </mesh>
+    <group key={stateString}>
+      <mesh
+        castShadow
+        geometry={nodes.T_Shirt_male.geometry}
+        material={materials.material}
+        dispose={null}
+        scale={[10, 10, 10]}
+      />
+    </group>
   );
-}
+};
 
 export default Box;

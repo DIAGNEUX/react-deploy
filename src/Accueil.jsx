@@ -1,19 +1,21 @@
-import React from 'react'
+import React from 'react';
 import Box from './Design/Box';
-import { Canvas } from "@react-three/fiber"
-import * as THREE from "three"; 
+import { Canvas } from '@react-three/fiber';
 
 const Accueil = () => {
   return (
     <div>
       <h1>Accueil</h1>
-      <Canvas >
-      <ambientLight />
-      <pointLight position={[10 , 10 , 10]} />
-      <Box/>
-      </Canvas>    
+      <div>
+        <Canvas>
+          <ambientLight />
+          <pointLight position={[10, 10, 10]} />
+          <Box />
+          {/* Ajoutez d'autres cubes avec des positions différentes si nécessaire */}
+        </Canvas>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Accueil
+export default Accueil;
