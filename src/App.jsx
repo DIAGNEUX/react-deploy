@@ -21,8 +21,8 @@ const App = () => {
       </div>
       <div className='container'>
         <Routes>
-          <Route path='/' element={<Accueil />} exact />
-          <Route path="/profil" element={<Profil />} />
+        <Route path="/react-deploy" element={<Accueil />} />
+          <Route path="/" element={<Accueil />} exact />          <Route path="/profil" element={<Profil />} />
           <Route path="/bts-sio" element={<BtsSio />} />
           <Route path="/ecole" element={<Ecole />} />
           <Route path="/entreprise" element={<Entreprise />} />
