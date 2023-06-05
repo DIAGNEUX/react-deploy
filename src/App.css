@@ -107,9 +107,7 @@ canvas {
     justify-content: center;
     border: 1px solid var(--second);
 }
-.wrap_competence .competence{
-    
-}
+
 .wrap_competence .competence h1{
     font-size: 40px;
 }
@@ -130,3 +128,115 @@ canvas {
     border: 1px solid var(--second) ;
     height: 300px;
 }
+
+/* bts sio */
+
+.main_bts{
+    font-family: 'Roobert', sans-serif;
+    width: 100%;
+    height: 90vh;
+    padding: 20px;
+}
+.wrap_bts h1 , .wrap_bts h3{
+    text-align: center;
+    margin: 10px 0;
+}
+.wrap_bts p {
+    padding: 0 30px;
+    margin: 10px 0;
+}
+.bts_grid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bts_grid .SISR , .bts_grid .SLAM{
+    margin: 10px 0;
+}
+
+/* Ecole */
+
+.ecole{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+.ecole h1{
+    text-align: center;
+}
+.projet{
+    width:100% ;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--second);
+}
+.projet p{
+    font-size: 45px;
+}
+
+/* Entreprise */
+
+.Entreprise{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+.Entreprise h1{
+    text-align: center;
+}
+.Ent_contain{
+    width:100% ;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--second);
+}
+.Ent_contain p{
+    font-size: 45px;
+}
+
+/* veille technologique  */
+
+.V_tech{
+    width: 100%;
+    padding: 20px;
+    position: relative;
+}
+.V_tech h1 {
+    text-align: center;
+}
+.V_tech p{
+    padding: 10px 30px;
+}
+.tools{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tools button{
+    padding: 5px 10px;
+    margin: 10px 0;
+    font-size: 17px;
+}
+.lesveilles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.lesveilles .first , .lesveilles .second{
+    width: 500px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--second);
+}
+
+
+
