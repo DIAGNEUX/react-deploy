@@ -8,7 +8,7 @@ const Accueil = () => {
       <div>
         <div className='flex_presentation'>
         <div className='presentation'>
-          <p>bonjour je m'appelle <span>Mame Diarra Niang</span> <br /></p>
+          <p>Bonjour je m'appelle <span>Mame Diarra Niang</span> <br /></p>
           <p>Etudiante en bts Sio option SISR</p>
         </div>
         </div>
