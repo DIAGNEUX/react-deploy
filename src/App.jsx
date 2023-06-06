@@ -12,6 +12,7 @@ import "./App.css";
 import github from './assets/github.png';
 import linkedin from './assets/linkedin.png';
 import gmail from './assets/gmail.png';
+import Loading from './Loading';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,12 +21,14 @@ const App = () => {
     // Simulation d'un délai de chargement de 2 secondes
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 3500);
   }, []);
 
   return (
     <div className={isLoading ? "App loading" : "App"}>
-      {isLoading && <div className="loading-overlay">Loading...</div>}
+      {isLoading && <div className="loading-overlay">    
+        <Loading /> 
+        </div>}
       <div className='wrapper'> 
         <div className="Navbar">
           <Navbar />

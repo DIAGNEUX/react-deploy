@@ -3,6 +3,7 @@ import Box from './Design/Box';
 import { Canvas } from '@react-three/fiber';
 
 const Accueil = () => {
+  
   return (
     <div>
       <div>
