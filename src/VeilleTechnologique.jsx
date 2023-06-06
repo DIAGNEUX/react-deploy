@@ -3,7 +3,7 @@ import React from 'react'
 const VeilleTechnologique = () => {
   return (
     <div className='V_tech'>
-      <h1>Veille VeilleTechnologique</h1>
+      <h1>Veille Technologique</h1>
       <p>La veille technologique désigne l'ensemble des méthodes légales employées pour organiser de manière systématique la collecte d'informations technologiques,
          leur analyse, leur diffusion et leur exploitation en vue de soutenir la croissance et le développement d'une entreprise. Elle implique l'observation et l'analyse
           des avancées scientifiques et techniques des produits, des processus de fabrication, des matériaux ainsi que des impacts économiques qu'ils engendrent, tant actuels que futurs.
